@@ -12,7 +12,9 @@ A simple application that imitates the publish-subscribe model of IoT sensors.
 - `publisher.py`: Publishes anywhere between 1 or 5 topics on random.
 - `web.py`: Simple page in Flask that reads from the json file and displays device information.
 
-![image](https://github.com/arjunanan6/py-iot-project/assets/102953522/801c050c-0ac0-4a64-9eb8-2a50bf7bc69f)
+
+![image](https://github.com/arjunanan6/py-iot-project/assets/102953522/2d63120a-7174-4313-98df-af0c93c85ad8)
+
 
 
 ## Usage
