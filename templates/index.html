@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Device Information</title>
+</head>
+<body>
+    <h1>Device Information</h1>
+    <table border="1">
+        <tr>
+            <th>Device</th>
+            <th>Software Version</th>
+            <th>Last Status</th>
+            <th>Last Notification</th>
+        </tr>
+        {% for device, data in devices.items() %}
+        <tr>
+            <td>{{ device }}</td>
+            <td>{{ data.software_version }}</td>
+            <td>{{ data.last_status }}</td>
+            <td>{{ data.last_notification }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
