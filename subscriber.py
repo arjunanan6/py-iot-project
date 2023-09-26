@@ -4,7 +4,10 @@ from utils import fetch_json, sanitize, update_device_info
 import logging
 
 # Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(filename)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(filename)s - %(levelname)s - %(message)s",
+)
 logger = logging.getLogger(__name__)
 
 
@@ -30,7 +33,8 @@ def on_message(mosq, obj, msg):
     logger.info(f"Last Status: {last_status}")
     logger.info(f"Last Notification: {last_notification}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     client = paho.Client()
     client.on_message = on_message
 

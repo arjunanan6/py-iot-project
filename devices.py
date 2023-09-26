@@ -13,5 +13,5 @@ device_info = {
     },
     "device5": {
         "software_version": "5.0",
-    }
+    },
 }
