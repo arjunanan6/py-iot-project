@@ -27,7 +27,7 @@ def on_message(mosq, obj, msg):
     last_status = device_data.get("last_status", "")
     last_notification = device_data.get("last_notification", "")
 
-    # Log the latest device information with DEBUG level
+    # Expose logs (INFO)
     logger.info(f"Device ID: {device_name}")
     logger.info(f"Software Version: {software_version}")
     logger.info(f"Last Status: {last_status}")
@@ -41,6 +41,7 @@ if __name__ == "__main__":
     client.connect("127.0.0.1", 1883, 60)
 
     for topic in topics:
+        # Subscribe to topics, no matter the number.
         client.subscribe(topic, 0)
 
     while client.loop() == 0:

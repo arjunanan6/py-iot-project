@@ -5,10 +5,24 @@ import time
 
 
 def sanitize(topic: str) -> str:
+    """Sanitize helper.
+
+    Args:
+        topic (str): Topic to be sanitized.
+        Ex: "device1/status" 
+
+    Returns:
+        str: returns "device1"
+    """
     return topic.split("/")[0]
 
 
 def fetch_json() -> dict:
+    """JSON -> dict helper.
+
+    Returns:
+        dict: Returns a dict of devices.
+    """
     with open(
         os.path.dirname(os.path.abspath(__file__)) + "/devices.json", "r"
     ) as file:
@@ -17,6 +31,12 @@ def fetch_json() -> dict:
 
 
 def update_device_info(device_name, status):
+    """Update .json file helper.
+
+    Args:
+        device_name (str): The device ID.
+        status (str): online/offline.
+    """
     with open(
         os.path.dirname(os.path.abspath(__file__)) + "/devices.json", "r"
     ) as file:

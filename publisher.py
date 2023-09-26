@@ -11,7 +11,7 @@ HOST = "localhost"
 
 if __name__ == "__main__":
     while True:
-        # Randomly send single, or multiple messages.
+        # Randomly send single or multiple messages.
         mode = random.choice(["single", "multiple"])
         if mode == "single":
             # Publish a single message

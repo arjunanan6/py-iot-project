@@ -2,26 +2,26 @@
     "device1": {
         "software_version": "1.0",
         "last_status": "online",
-        "last_notification": "2023-09-25 21:11:19"
+        "last_notification": "2023-09-26 07:40:57"
     },
     "device2": {
         "software_version": "2.0",
         "last_status": "offline",
-        "last_notification": "2023-09-25 21:11:19"
+        "last_notification": "2023-09-26 07:40:57"
     },
     "device3": {
         "software_version": "2.0",
-        "last_status": "offline",
-        "last_notification": "2023-09-25 21:11:19"
+        "last_status": "online",
+        "last_notification": "2023-09-26 07:40:57"
     },
     "device4": {
         "software_version": "3.0",
-        "last_status": "offline",
-        "last_notification": "2023-09-25 21:11:19"
+        "last_status": "online",
+        "last_notification": "2023-09-26 07:40:57"
     },
     "device5": {
         "software_version": "1.0",
-        "last_status": "offline",
-        "last_notification": "2023-09-25 21:11:19"
+        "last_status": "online",
+        "last_notification": "2023-09-26 07:41:02"
     }
 }
