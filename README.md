@@ -7,7 +7,6 @@ A simple application that imitates the publish-subscribe model of IoT sensors.
 ## Components
 
 - `Broker`: [Mosquitto](http://mosquitto.org/) is used as a message broker to interpret MQTT traffic to allow mocked publish/subscribes.
-- `Broker`: [Mosquitto](http://mosquitto.org/) is used as a message broker to interpret MQTT traffic to allow mocked publish/subscribes.
 - `subscriber.py`: Subscribes to a set of topics, in this case, deviceID/status. Once read, devices.json is updated with the last timestamp. devices.json here serves as a local database. The subscriber also logs this information to the console.
 - `publisher.py`: Publishes anywhere between 1 or 5 topics on random.
 - `web.py`: Simple page in Flask that reads from the json file and displays device information.
